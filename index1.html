@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NGO Website</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Custom styles */
+    body {
+      padding-top: 56px;
+    }
+    .hero {
+      background: #28a745;
+      color: white;
+      padding: 100px 15px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #222;
+      color: #ddd;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Helping Hands NGO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Home Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to Helping Hands</h1>
+      <p>Your support makes a difference in communities worldwide.</p>
+      <a href="#volunteer" class="btn btn-light btn-lg mt-3">Become a Volunteer</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">About Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p>
+            Helping Hands is a nonprofit organization dedicated to improving life quality for underprivileged communities.
+            We focus on education, healthcare, and sustainable development initiatives.
+          </p>
+          <p>
+            Since 2010, our dedicated volunteers and staff have worked tirelessly to bring positive change and hope to those in need.
+            Join us in our mission to make a lasting impact globally.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Form -->
+  <section id="volunteer" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Volunteer With Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-7 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name *</label>
+              <input type="text" class="form-control" id="name" placeholder="Your full name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address *</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="+1 234 567 8900" />
+            </div>
+            <div class="mb-3">
+              <label for="interest" class="form-label">Area of Interest *</label>
+              <select class="form-select" id="interest" required>
+                <option selected disabled value="">Choose...</option>
+                <option value="education">Education</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="environment">Environment</option>
+                <option value="community">Community Development</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Why do you want to volunteer?</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      &copy; 2025 Helping Hands NGO. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
